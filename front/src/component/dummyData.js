@@ -3,5 +3,4 @@ const navBarComp = [
     {title:"Product",URL:"#"},
     {title:"About",URL:"https://chat.openai.com/chat"}
 ]
-
 export default navBarComp

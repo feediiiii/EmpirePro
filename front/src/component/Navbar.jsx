@@ -10,7 +10,7 @@ const Navbar = () => {
 const [toggle,setToggle] = useState(false)
 
   return (
-    <nav className='w-full flex py-6 justify-between item-center navbar h-[100px]'>
+    <nav className='fixed top-0 left-0 right-0 z-50  w-full flex py-6 justify-between item-center navbar h-[100px] ' >
         <img src={logo} className="w-[35px] h-[35px]" alt={"The logo"}/>
         <ul className='list-none justify-end sm:flex hidden item-center font-poppins font-normal cursor-pointer flex-1'>
             {navBarComp.map((element,index)=>{
