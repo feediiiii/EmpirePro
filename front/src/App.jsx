@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from './component/Carousel.jsx'
 import GetStarted from './component/GetStarted.jsx'
 import Navbar from './component/Navbar.jsx'
 import UnderNav from './component/UnderNav.jsx'
@@ -21,7 +22,7 @@ const App = () => {
 
      
       <div className={`bg-primary  ${css.flexCenter} justify-center items-center`}>
-        <div className={`${css.boxWidth} sm:mt-[50px] mt-[30px] justify-center items-center`}>
+        <div className={`container sm:mt-[50px] mt-[30px] justify-center items-center sm:hidden `}>
               <GetStarted/>
           </div>
       </div>
@@ -40,6 +41,14 @@ const App = () => {
             </div>
           </div>
 
+      </div>
+
+      <div>
+        <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> Projects </h1>
+      </div>
+
+      <div className='h-[400px] justify-center items-center '>
+        <Carousel/>
       </div>
 
 
