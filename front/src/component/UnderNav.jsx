@@ -43,7 +43,7 @@ const UnderNav = () => {
                 </h1>
                 
                 <div className={"ss:flex hidden md:mr-[10px] w-[300px] place-content-end"}>
-                    <div className={`justify-center ${css.flexCenter} ml-[100px] `}>
+                    <div className={`justify-center ${css.flexCenter} ml-[100px] hover:cursor-pointer`}>
                         <GetStarted/>
                     </div>
                 </div>

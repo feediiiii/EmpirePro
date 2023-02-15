@@ -1,6 +1,6 @@
 import React from 'react'
 import navBarComp from "./dummyData.js"
-import logo from "../assets/verify.png"
+import logo from "../assets/comp1.png"
 import menu from "../assets/menu (1).png"
 import cross from "../assets/cross.png"
 import { useState } from 'react'
@@ -11,7 +11,7 @@ const [toggle,setToggle] = useState(false)
 
   return (
     <nav className='fixed top-0 left-[0] right-0 z-50  w-full flex py-6  item-center navbar h-[100px] space-between backdrop-blur-md' >
-        <img src={logo} className="w-[35px] h-[35px] ml-[30px]" alt={"The logo"} />
+        <img src={logo} className="w-[111px] h-[68px] ml-[30px]" alt={"The logo"} />
         <div className=' w-[100%]'>
             <ul className='list-none justify-end sm:flex hidden item-center font-poppins font-normal cursor-pointer mr-[30px]'>
                 {navBarComp.map((element,index)=>{
