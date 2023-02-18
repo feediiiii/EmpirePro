@@ -16,7 +16,7 @@ const [toggle,setToggle] = useState(false)
             <ul className='list-none justify-end sm:flex hidden item-center font-poppins font-normal cursor-pointer mr-[30px]'>
                 {navBarComp.map((element,index)=>{
                     return (
-                        <li className={`${navBarComp.length-1===index? 'mr-0' : 'mr-20'}`} key={element.title}><a href={element.URL}> {element.title} </a></li>
+                        <li className={`${navBarComp.length-1===index? 'mr-0' : 'mr-20'} transition duration-200 ease-in-out transform hover:scale-105`} key={element.title}><a href={element.URL}> {element.title} </a></li>
                     )
                 })}
             </ul>
@@ -27,7 +27,7 @@ const [toggle,setToggle] = useState(false)
         <div className={`${toggle ?'flex' : 'hidden'} sm:hidden p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[240px] sidebar rounded-xl `} >
             {navBarComp.map((element,index)=>{
                 return (
-                    <li key={index} className={`list-none ${index===navBarComp.length-1?'mr-0':'mr-10'}`}><a href={element.URL}> {element.title}  </a></li>
+                    <li key={index} className={`list-none text-blue-500  duration-300 hover:transition-colors${index===navBarComp.length-1?'mr-0':'mr-10'} font-Cairo`} ><a href={element.URL} className={`text-blue-500  duration-300 hover:transition-colors`}> <h3  className={`text-blue-500  duration-300 hover:transition-colors`}>{element.title}</h3>  </a></li>
                 )
             })}
         </div>

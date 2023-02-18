@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,6 +19,7 @@
 * {
   scroll-behavior: smooth;
 }
+
 
 .border-gradient {
   border-image: linear-gradient(to right, blue, purple); border-image-slice: 1; border-radius: 20px;
@@ -40,13 +43,31 @@
 
 .bg-blue-gradient {
   background: linear-gradient(
-    157.81deg,
+    50.81deg,
     #def9fa -43.27%,
     #bef3f5 -21.24%,
     #9dedf0 12.19%,
     #7de7eb 29.82%,
     #5ce1e6 51.94%,
     #33bbcf 90.29%
+  );
+}
+
+.bg-love-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #262438 -278.56%,
+    #b41919 -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-blackAndWhite-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #fdfdff -278.56%,
+    #1f1f1f -78.47%,
+    #11101d 91.61%
   );
 }
 
@@ -58,6 +79,8 @@
     #11101d 91.61%
   );
 }
+
+
 
 .bg-black-gradient-2 {
   background: linear-gradient(
@@ -127,6 +150,22 @@
     transform: translateY(0);
   }
 }
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse:hover {
+  animation: pulse 2s infinite;
+}
+
+
+
 
 @keyframes slide-top {
   0% {

@@ -11,6 +11,7 @@ import 'tailwindcss/tailwind.css';
 
 import img1 from './assets/Me and Marushhh.png'
 import img2 from './assets/img2.png'
+import Footer from './component/Footer.jsx'
 
 
 const App = () => {
@@ -55,19 +56,19 @@ const App = () => {
         <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> Projects </h1>
       </div>
 
-
-      <div className='h-auto'>
+      <div className="absolute z-1 w-[40%] h-[30%] top-[1000px] right-0 pink__gradient"></div>
+      <div className='h-auto mb-[100px]'>
       <Slider
                 dots={true}
                 infinite={true}
                 speed={1000}
                 slidesToShow={3}
-                slidesToScroll={1}
+                slidesToScroll={1} 
                 autoplay={true}
                 autoplaySpeed={2000}
                 pauseOnHover={true}
                 responsive={[
-                  {
+                  { 
                     breakpoint: 2000,
                     settings: {
                       slidesToShow: 1
@@ -80,7 +81,8 @@ const App = () => {
               </Slider>
       </div>
 
-
+      <Footer/>
+      
     </div>
   )
 }
