@@ -27,7 +27,7 @@ const [toggle,setToggle] = useState(false)
         <div className={`${toggle ?'flex' : 'hidden'} sm:hidden p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[240px] sidebar rounded-xl `} >
             {navBarComp.map((element,index)=>{
                 return (
-                    <li key={index} className={`list-none text-blue-500  duration-300 hover:transition-colors${index===navBarComp.length-1?'mr-0':'mr-10'} font-Cairo`} ><a href={element.URL} className={`text-blue-500  duration-300 hover:transition-colors`}> <h3  className={`text-blue-500  duration-300 hover:transition-colors`}>{element.title}</h3>  </a></li>
+                    <li key={index} className={`list-none mx-4 duration-300 hover:transition-colors${index===navBarComp.length-1?'mr-0':'mr-10'} font-Cairo`} ><a href={element.URL} className={` duration-300 hover:transition-colors`}> {element.title} </a></li>
                 )
             })}
         </div>

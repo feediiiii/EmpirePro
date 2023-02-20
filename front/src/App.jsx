@@ -12,6 +12,8 @@ import 'tailwindcss/tailwind.css';
 import img1 from './assets/Me and Marushhh.png'
 import img2 from './assets/img2.png'
 import Footer from './component/Footer.jsx'
+import Cvs from './component/Cvs.jsx'
+import TimeLine from './component/TimeLine.jsx'
 
 
 const App = () => {
@@ -30,27 +32,21 @@ const App = () => {
       </div>
 
      
-      <div className={`bg-primary  ${css.flexCenter} justify-center items-center`}>
-        <div className={`container sm:mt-[50px] mt-[30px] justify-center items-center sm:hidden hover:cursor-pointer `}>
+      <div className={`bg-primary  ${css.flexCenter} mx-0 justify-center items-center`}>
+        <div className={`flex  justify-center items-center md:hidden hover:scale-110 ease-in-out duration-150 cursor-pointer `}>
               <GetStarted/>
           </div>
       </div>
 
-      <div className={` font-poppins ${css.flexCenter} `}>
 
-          <div className='items-center flex mt-[50px] flex-col sm:flex-row md:m-[40px] space-x-20  mb-[100px] justify-around '>
-            <div className={'shadow-white bg-gray-gradient  rounded-xl    w-[250px] h-[200px]  hover:border-2 border-x-green-300 '}>
-                
-            </div>
-            <div className={'shadow-white bg-gray-gradient w-[250px] h-[200px] ] rounded-xl hover:border-2 border-x-green-300'}>
-
-            </div>
-            <div className={'shadow-white bg-gray-gradient w-[250px] h-[200px]  rounded-xl hover:border-2 border-x-green-300'}>
-
-            </div>
-          </div>
-
+      <div>
+        <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> Projects </h1>
       </div>
+      <div className={` font-poppins ${css.flexCenter}  `}>
+         <Cvs/>
+      </div>
+
+
 
       <div>
         <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> Projects </h1>
@@ -80,6 +76,8 @@ const App = () => {
                     <Carousel img={img2}/>
               </Slider>
       </div>
+
+      <TimeLine/>
 
       <Footer/>
       
