@@ -19,6 +19,7 @@ import TimeLine from './component/TimeLine.jsx'
 const App = () => {
   return (
     <div className='bg-primary text-white sm:px-16 px-6'>
+      <div className="absolute z-0 w-[60%] h-[30%] top-[1500px] left-0 blue__gradient opacity-60"></div>
         <div className="absolute z-0 w-[40%] h-[30%] top-0 left-0 pink__gradient"></div>
         <div className={`${css.boxWidth} z-1`}>
           <Navbar/>
@@ -40,9 +41,9 @@ const App = () => {
 
 
       <div>
-        <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> Projects </h1>
+        <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> About Me </h1>
       </div>
-      <div className={` font-poppins ${css.flexCenter}  `}>
+      <div className={` font-poppins ${css.flexCenter} w-auto flex mx-0 `}>
          <Cvs/>
       </div>
 
@@ -53,7 +54,7 @@ const App = () => {
       </div>
 
       <div className="absolute z-1 w-[40%] h-[30%] top-[1000px] right-0 pink__gradient"></div>
-      <div className='h-auto mb-[100px]'>
+      <div className='h-auto mb-[180px]'>
       <Slider
                 dots={true}
                 infinite={true}
@@ -77,9 +78,15 @@ const App = () => {
               </Slider>
       </div>
 
-      <TimeLine/>
 
+      <div>
+        <TimeLine/>
+      </div>
+      
+
+   
       <Footer/>
+
       
     </div>
   )

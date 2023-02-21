@@ -5,7 +5,7 @@ import img1 from '../assets/Me and Marushhh.png'
 const Carousel = ({img,title,paragraph}) => {
   return (
     
-    <div className='flex-row md:flex  h-auto  w-auto bg-blackAndWhite-gradient bg-opacity-10 rounded-xl  justify-start'>
+    <div className='flex-row md:flex  h-auto  w-auto bg-blackAndWhite-gradient bg-opacity-10 rounded-xl  justify-start backdrop-blur-xl'>
         <div className='flex justify-start transition duration-200 ease-in-out transform hover:scale-105'>
             <div className='bg-green-gradient absolute h-[30px] w-[200px] rounded-md  p-[10px] flex items-center justify-center '>
                 <h3 className={`font-poppins font-semibold text-black`}> Click to see more</h3>
