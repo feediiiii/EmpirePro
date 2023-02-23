@@ -8,6 +8,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'tailwindcss/tailwind.css';
+import { projectSlides } from './component/dummyData.js'
 
 import img1 from './assets/Me and Marushhh.png'
 import img2 from './assets/img2.png'
@@ -20,7 +21,7 @@ const App = () => {
   return (
     <div className='bg-primary text-white sm:px-16 px-6'>
       <div className="absolute z-0 w-[60%] h-[30%] top-[1500px] left-0 blue__gradient opacity-60"></div>
-        <div className="absolute z-0 w-[40%] h-[30%] top-0 left-0 pink__gradient"></div>
+        <div className="absolute z-0 w-[40%] h-[30%] top-0 left-0  pink__gradient"></div>
         <div className={`${css.boxWidth} z-1`}>
           <Navbar/>
         </div>
@@ -73,8 +74,11 @@ const App = () => {
                   }
                 ]}
               >
-                    <Carousel img={img1}/>
-                    <Carousel img={img2}/>
+                  {projectSlides.map((e)=>{
+                    return(
+                       <Carousel img={e.img} title={e.title} paragraph={e.paragraph}/>
+                    )
+                })}
               </Slider>
       </div>
 

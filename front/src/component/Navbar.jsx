@@ -1,5 +1,5 @@
 import React from 'react'
-import navBarComp from "./dummyData.js"
+import {navBarComp,projectSlides} from "./dummyData.js"
 import logo from "../assets/comp1.png"
 import menu from "../assets/menu (1).png"
 import cross from "../assets/cross.png"
