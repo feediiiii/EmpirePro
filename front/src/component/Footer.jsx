@@ -4,8 +4,8 @@ import "../index.css"
 const Footer = () => {
   return (
     
-    <footer className='flex mx-0 mt-[170px] pt-[70px] pb-[70px] w-auto bg-gray-gradient bg-opacity-20 rounded-xl '>
-        <div className="absolute z-0 w-[40%] h-[30%] top-0 left-0 pink__gradient"></div>
+    <footer className='flex bg-black text-white mx-0 mt-[0px] pt-[70px] pb-[70px] w-full bg-blackk-gradient backdrop-blur-lg'>
+        <div className="absolute z-0 w-[40%] h-[30%] top-0 left-0 pink__gradient "></div>
             <div className='flex mx-auto sm:space-x-0 md:space-x-20 backdrop-blur-md'>
                 <div className='hidden sm:hidden md:block flex-row  sm:space-y-1 md:space-y-8  font-poppins'>
                         <div><a href="">Adress Email : </a> </div>

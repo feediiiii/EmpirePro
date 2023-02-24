@@ -82,12 +82,13 @@
 
 
 
-.bg-black-gradient-2 {
+.bg-blackk-gradient {
   background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    150.39deg,
+    #323232 -278.56%,
+    #181b34f8 -78.47%,
+    #14132f 91.61%
+
   );
 }
 

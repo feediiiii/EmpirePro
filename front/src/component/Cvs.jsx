@@ -14,9 +14,9 @@ const Cvs = () => {
                 <div className='  h-[50%]'>
                   <img src={cvimg} alt="" />
                 </div>
-                <div className=' flex mx-0 backdrop-blur-xl bg-slate-900/10 h-[50%] items-center justify-center '>
+                <div className=' flex mx-0 backdrop-blur-xl bg-slate-900/50 h-[50%] items-center justify-center '>
                     <div className='flex-row mx-0'>
-                        <h3 className='text-center drop-shadow-xl'> My Cv for downloading </h3>
+                        <h3 className='text-center font-thin '> My Cv for downloading </h3>
                         <div className='flex mt-[20px]'>
                            <img src={download1} alt="loading" className='h-[40px] mx-auto hover:bg-blue-gradient hover:scale-110 ease-linear duration-150 cursor-pointer' />
                         </div>
@@ -31,10 +31,10 @@ const Cvs = () => {
                 <div className='  h-[50%]'>
                       <img src={coverletter} alt="" />
                 </div>
-                <div className=' flex mx-0 backdrop-blur-xl bg-slate-900/10 h-[50%]  items-center justify-center '>
+                <div className=' flex mx-0 backdrop-blur-xl bg-slate-900/50 h-[50%]  items-center justify-center '>
                   <div className='flex-row mx-0'>
-                        <h3 className='text-center drop-shadow-xl'> My Cover letter for downloading </h3>
-                        <div className='flex mt-[20px]'>
+                        <h3 className='text-center font-thin '> My Cover letter for downloading </h3>
+                        <div className='flex mt-[20px] '>
                            <img src={download1} alt="loading" className='h-[40px] mx-auto hover:bg-blue-gradient hover:scale-110 ease-linear duration-150 cursor-pointer' />
                         </div>
                        

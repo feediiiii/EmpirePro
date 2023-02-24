@@ -19,6 +19,7 @@ import TimeLine from './component/TimeLine.jsx'
 
 const App = () => {
   return (
+    <>
     <div className='bg-primary text-white sm:px-16 px-6'>
       <div className="absolute z-0 w-[60%] h-[30%] top-[1500px] left-0 blue__gradient opacity-60"></div>
         <div className="absolute z-0 w-[40%] h-[30%] top-0 left-0  pink__gradient"></div>
@@ -83,16 +84,17 @@ const App = () => {
       </div>
 
 
-      <div>
+      <div className='pb-[100px]'>
         <TimeLine/>
       </div>
       
 
    
-      <Footer/>
 
       
     </div>
+      <Footer/>
+      </>
   )
 }
 
