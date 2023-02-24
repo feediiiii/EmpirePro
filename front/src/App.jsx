@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Carousel from './component/Carousel.jsx'
 import GetStarted from './component/GetStarted.jsx'
 import Navbar from './component/Navbar.jsx'
@@ -16,8 +16,18 @@ import Footer from './component/Footer.jsx'
 import Cvs from './component/Cvs.jsx'
 import TimeLine from './component/TimeLine.jsx'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+  }, []);
+
   return (
     <>
     <div className='bg-primary text-white sm:px-16 px-6'>
@@ -42,10 +52,10 @@ const App = () => {
       </div>
 
 
-      <div>
+      <div data-aos="fade-up">
         <h1 className='font-poppins font-semibold text-[30px] ss:text-[40px]'> About Me </h1>
       </div>
-      <div className={` font-poppins ${css.flexCenter} w-auto flex mx-0 `}>
+      <div data-aos="fade-up" className={` font-poppins ${css.flexCenter} w-auto flex mx-0 `}>
          <Cvs/>
       </div>
 

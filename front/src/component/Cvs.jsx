@@ -1,15 +1,26 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import cvimg from '../assets/cv.png'
 import download1 from '../assets/download1.png'
 import coverletter from '../assets/coverletter.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Cvs = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+  }, []);
+
+
   return (
     <>
 
     <div className='grid md:grid-cols-2 space-y-3 md:space-x-20 md:space-y-0 items-center  mt-[10px]   mb-[100px] justify-center w-auto '>
              
-            <div className={'overflow-hidden flex-row  shadow-white rounded-xl  w-[180px] h-[280px] md:w-[250px] md:h-[300px] hover:border-2 border-x-green-300 '}>
+            <div data-aos="fade-right" className={'overflow-hidden flex-row  shadow-white rounded-xl  w-[180px] h-[280px] md:w-[250px] md:h-[300px] hover:border-2 border-x-green-300 '}>
 
                 <div className='  h-[50%]'>
                   <img src={cvimg} alt="" />
@@ -27,7 +38,7 @@ const Cvs = () => {
             </div>
 
 
-            <div className={'overflow-hidden flex-row shadow-white bg-gray-gradient ml-0 w-[180px] h-[280px] md:w-[250px] md:h-[300px] rounded-xl hover:border-2 border-x-green-300'}>
+            <div data-aos="fade-left" className={'overflow-hidden flex-row shadow-white bg-gray-gradient ml-0 w-[180px] h-[280px] md:w-[250px] md:h-[300px] rounded-xl hover:border-2 border-x-green-300'}>
                 <div className='  h-[50%]'>
                       <img src={coverletter} alt="" />
                 </div>
